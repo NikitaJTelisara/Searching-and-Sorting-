@@ -1,14 +1,3 @@
-/**
- * Created with IntelliJ IDEA.
- * Date: 6/5/16
- * Time: 8:36 PM
- * To change this template use File | Settings | File Templates.
- */
-//*******************************************************************
-// Java compiler created in PHP to quickly and safely test code.
-// NOTE: please read the 'More Info' tab to the right for shortcuts.
-//*******************************************************************
-
 import java.lang.Math;
 
 public class SearchingAndSorting{
