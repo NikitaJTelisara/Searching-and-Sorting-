@@ -116,4 +116,7 @@ public class SearchingAndSorting{
         }
         return arr;
     }
+    /* QuickSort best =Simple Partition O(nlogn), 3 way partition O(n)
+                      worst =O(n^2) 
+                      Average O(nlogn)  */
 }
