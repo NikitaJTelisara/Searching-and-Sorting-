@@ -33,7 +33,7 @@ public class SearchingAndSorting{
         }
 
     }
-
+  
     public static int[] doSelectionSort(int[] a){
         for(int i = 0; i<=a.length; i++){
             for(int j = i+1; j<a.length; j++){
@@ -46,7 +46,8 @@ public class SearchingAndSorting{
         }
         return a;
     }
-
+    /* selection sort best =O(n^2)
+                      worst =O(n^2) */
 
     public static int[] doInsertionSort(int[] a){
         for(int i = 0; i < a.length; i++){
