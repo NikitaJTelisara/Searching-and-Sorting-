@@ -61,6 +61,9 @@ public class SearchingAndSorting{
         }
         return a;
     }
+    
+    /* insertion sort best =O(n)
+                      worst =O(n^2) */
 
     public static int[] doBubbleSort(int[] a){
         for(int i = a.length; i>0 ; i--){
