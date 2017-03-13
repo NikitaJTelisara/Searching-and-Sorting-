@@ -77,6 +77,9 @@ public class SearchingAndSorting{
         }
         return a;
     }
+    
+     /* bubble sort best =O(n^2)
+                      worst =O(n^2) */
 
     public static int[] doQuickSort(int[] arr, int lowerIndex, int higherIndex){
         int i = lowerIndex;
