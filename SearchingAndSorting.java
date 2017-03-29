@@ -128,9 +128,8 @@ public class SearchingAndSorting {
         }
         return arr;
     }
-    /* QuickSort best =Simple Partition O(nlogn), 3 way partition O(n)
-                      worst =O(n^2) 
-                      Average O(nlogn)  */
+    /* QuickSort best =Simple Partition O(nlogn), 3 way partition O(n), worst =O(n^2) , Average O(nlogn)  
+                      Memory: 0( Log (n) ).*/
 
     public static int[] doMergeSort(int[] inputArr, int low, int high, int[] helper) {
         int[] result = new int[inputArr.length];
@@ -170,8 +169,8 @@ public class SearchingAndSorting {
 
     /* MergeSort best Runtime: worst =O(n)
                                best and Average O(nlogn) 
-                        Spsce: Depends       
-                               */
+                        Spcce: Depends       
+    */
 }
 
 
