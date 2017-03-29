@@ -1,4 +1,6 @@
 import java.lang.Math;
+/* Merge Sort, Quick Sort and Bucket
+Sort are the most commonly used in interviews */
 
 public class SearchingAndSorting {
     public static void main(String[] args) {
@@ -54,8 +56,9 @@ public class SearchingAndSorting {
         }
         return a;
     }
-    /* selection sort best =O(n^2)
-                      worst =O(n^2) */
+    /* selection sort best Runtime : best and worst =O(n^2) 
+                           Space : O(1)          
+    */
 
     public static int[] doInsertionSort(int[] a) {
         for (int i = 0; i < a.length; i++) {
@@ -86,8 +89,9 @@ public class SearchingAndSorting {
         return a;
     }
 
-    /* bubble sort best =O(n^2)
-  worst =O(n^2) */
+    /* bubble sort best Runtime : best and worst =O(n^2) 
+                           Space : O(1)          
+    */
 
     public static int[] doQuickSort(int[] arr, int lowerIndex, int higherIndex) {
         int i = lowerIndex;
@@ -164,6 +168,8 @@ public class SearchingAndSorting {
         return inputArr;
     }
 
-    /* MergeSort best = worst =O(n)
-        best and Average O(nlogn)  */
+    /* MergeSort best Runtime: worst =O(n)
+                               best and Average O(nlogn)  */
 }
+
+
