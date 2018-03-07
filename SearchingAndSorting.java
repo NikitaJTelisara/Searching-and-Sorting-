@@ -77,13 +77,12 @@ public class SearchingAndSorting {
   worst =O(n^2) */
 
     public static int[] doBubbleSort(int[] a) {
-        for (int i = a.length; i > 0; i--) {
-            //for (int j = 0; j < a.length - 1; j++) {
-            for (int j = 0; j <=i; j++) {
-                if (a[j] > a[j + 1]) {
+        for (int i = a.length - 1; i >= 0; i--) {
+            for (int j = 0; j <= i; j++) {
+                if (a[j] > a[i]) {
                     int temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
+                    a[j] = a[i];
+                    a[i] = temp;
                 }
             }
         }
