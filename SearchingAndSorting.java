@@ -78,7 +78,8 @@ public class SearchingAndSorting {
 
     public static int[] doBubbleSort(int[] a) {
         for (int i = a.length; i > 0; i--) {
-            for (int j = 0; j < a.length - 1; j++) {
+            //for (int j = 0; j < a.length - 1; j++) {
+            for (int j = 0; j <=i; j++) {
                 if (a[j] > a[j + 1]) {
                     int temp = a[j];
                     a[j] = a[j + 1];
