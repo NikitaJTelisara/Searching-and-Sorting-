@@ -56,7 +56,7 @@ public class SearchingAndSorting {
         }
         return a;
     }
-    /* selection sort best Runtime : best and worst =O(n^2) 
+    /* selection sort best Runtime : avg case =O(n^2) 
                            Space : O(1)          
     */
 
@@ -74,7 +74,7 @@ public class SearchingAndSorting {
     }
 
     /* insertion sort best =O(n)
-  worst =O(n^2) */
+  avh case =O(n^2) */
 
     public static int[] doBubbleSort(int[] a) {
         for (int i = a.length - 1; i >= 0; i--) {
@@ -89,7 +89,7 @@ public class SearchingAndSorting {
         return a;
     }
 
-    /* bubble sort best Runtime : best and worst =O(n^2) 
+    /* bubble sort best Runtime : avg case =O(n^2) 
                            Space : O(1)          
     */
 
@@ -167,12 +167,15 @@ public class SearchingAndSorting {
         return inputArr;
     }
 
-    /* MergeSort best Runtime: worst =O(n)
-                               best and Average O(nlogn) 
+    /* MergeSort best Runtime: worst =O(nlogn)
+                                
                         Spcce: Depends       
     */
     
-    /*Radix Sort Runtime: 0(kn) */
+    /*Radix Sort Runtime: 0(kn) 
+    
+    Merge Sort is better coz its worst case is nlogn and other have avg case of O(n^2)
+    */
         
 }
 
