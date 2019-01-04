@@ -36,9 +36,9 @@ public class SearchingAndSorting {
         System.out.print("\n");
         //Merge Sort
         int[] a = {2, 6, 4, 2, 9, 3, 8, 6};
-        int[] helper = new int[a.length];
-        int[] res = doMergeSort(a, 0, a.length - 1, helper);
-        for (int i : res) {
+       
+        doMergeSort(a, 0, a.length - 1);
+        for (int i : a) {
             System.out.print(i);
             System.out.print(",");
         }
