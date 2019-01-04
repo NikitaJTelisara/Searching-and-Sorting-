@@ -163,6 +163,12 @@ public class SearchingAndSorting {
             k++;
             i++;
         }
+        // i think we need this too
+        while (j<=high){
+            inputArr[k]= h[j];
+            j++;
+            k++;
+        }
     }
 
     /* MergeSort best Runtime: worst =O(nlogn)
