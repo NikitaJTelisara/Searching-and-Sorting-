@@ -131,18 +131,17 @@ public class SearchingAndSorting {
     /* QuickSort best =Simple Partition O(nlogn), 3 way partition O(n), worst =O(n^2) , Average O(nlogn)  
                       Memory: 0( Log (n) ).*/
 
-    public static int[] doMergeSort(int[] inputArr, int low, int high, int[] helper) {
-        int[] result = new int[inputArr.length];
+   public static void doMergeSort(int[] inputArr, int low, int high) {
         if (low < high) {
             int middle = low + (high - low) / 2;
-            doMergeSort(inputArr, low, middle, helper);
-            doMergeSort(inputArr, middle + 1, high, helper);
-            result = mergeParts(inputArr, low, middle, high, helper);
+            doMergeSort(inputArr, low, middle);
+            doMergeSort(inputArr, middle + 1, high);
+            mergeParts(inputArr, low, middle, high);
         }
-        return result;
     }
 
-    public static int[] mergeParts(int[] inputArr, int low, int middle, int high, int[] helper) {
+    public static void mergeParts(int[] inputArr, int low, int middle, int high) {
+        int[] helper = new int[inputArr.length];
         for (int i = low; i <= high; i++) {
             helper[i] = inputArr[i];
         }
@@ -164,8 +163,6 @@ public class SearchingAndSorting {
             k++;
             i++;
         }
-        return inputArr;
-    }
 
     /* MergeSort best Runtime: worst =O(nlogn)
                                 
