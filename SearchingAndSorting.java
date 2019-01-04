@@ -163,6 +163,7 @@ public class SearchingAndSorting {
             k++;
             i++;
         }
+    }
 
     /* MergeSort best Runtime: worst =O(nlogn)
                                 
